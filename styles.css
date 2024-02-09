@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: hsl(218, 52%, 52%);
+    --lightblue: hsl(218, 52%, 70%);
+    --greyish: hsl(0, 0%, 95%);
+}
+
+body {
+    font-family: "Consolas";
+    text-align: center;
+    background-color: white;
+}
+
+#title {
+    width: 40%;
+    margin: 40px auto 80px auto;
+    padding: 20px 0;
+    color: var(--blue);
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: var(--greyish);
+    transition: box-shadow 0.3s ease-out;
+}
+
+main {
+    position: relative;
+    width: max-content;
+    margin: 0 auto;
+}
+
+#root {
+    display: inline-block;
+    width: 1300px;
+    height: 600px;
+    padding-inline: 50px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: var(--greyish);
+    transition: box-shadow 0.3s ease-out;
+}
+
+#root:hover, #title:hover {
+    box-shadow: black 0px 10px;
+}
+
+g.tick, line, path {
+    stroke: grey;
+    font-size: 0.7vw;
+}
+
+.bar {
+    display: inline-block;
+    fill: var(--blue);
+    stroke-width: 0.3px;
+    stroke: black;
+}
+
+.bar:hover {
+    fill: var(--lightblue) !important;
+}
+
+#tooltip {
+    position: absolute;
+    min-width: 180px;
+    background-color: grey;
+    padding: 15px;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: black 0px 5px;
+    opacity: 0;
+}
+
+@media only screen and (max-width: 1500px) {
+    main {
+        transform: scale(0.9);
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    main {
+        transform: scale(0.8);
+    }
+}
+
+@media only screen and (max-width: 1190px) {
+    main {
+        transform: scale(0.7);
+    }
+}
