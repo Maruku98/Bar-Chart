@@ -2,9 +2,9 @@
 ## Overview
 
 Bar Chart built dinamically with JavaScript D3 library and fetched JSON data!<br><br>
-<img src="https://github.com/Maruku98/Bar-Chart/assets/133391272/a567c49f-dd11-49ed-bcea-f18e73a651b6" width="800">
+<img src="https://github.com/Maruku98/Bar-Chart/assets/133391272/a567c49f-dd11-49ed-bcea-f18e73a651b6" width="700">
 
-## TECHNOLOGIES
+## TECHNOLOGIES USED
 - **HTML5**
 - **CSS3**
 - **JavaScript ES6**
